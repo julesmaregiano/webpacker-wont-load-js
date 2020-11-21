@@ -8,18 +8,18 @@ require("channels")
 require("jquery")
 
 
-import "dragula"
-import "simplebar"
-import "popper.js"
-import "apexcharts"
-import "chart.js"
-import "jquery-toast-plugin"
-import "moment"
-import "jvectormap-next"
-// import "daterangepicker/package.js"
+// import "dragula"
+// import "simplebar"
+// import "popper.js"
+// import "chart.js"
+// import "jquery-toast-plugin"
+// import "moment"
 import "bootstrap"
+import "apexcharts"
+import "jvectormap-next"
+import "daterangepicker"
 
-import '../stylesheets/application'
+// import '../assets/stylesheets/application'
 
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)

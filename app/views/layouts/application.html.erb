@@ -6,20 +6,28 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+	<%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 	<%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+	<!-- CDN scripts, uncomment to get the home/html page to work almost properly -->
+	<!-- 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/moment.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/3.0.5/daterangepicker.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.css"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jvectormap-next@3.1.1/jquery-jvectormap.min.js"></script>
+	<script src="https://jvectormap.com/js/jquery-jvectormap-world-mill.js"></script>
+	 -->
+
   </head>
 
   <div class="wrapper">
-    <%#= render 'layouts/partials/left-sidebar'%>
     <div class="content-page">
       <div class="content">
-        <%#= render 'layouts/partials/topbar'%>
         <%= yield %>
       </div>
-      <%#= render 'layouts/partials/footer'%>
 	</div>
 	<%= yield :extra_script %>
   </div>
+
 </html>
